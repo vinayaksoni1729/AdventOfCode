@@ -1011,15 +1011,15 @@ for line in lines:
     arr1.append(col1)
     arr2.append(col2)
 
-arr1.sort()
-arr2.sort()
+#arr1.sort()
+#arr2.sort()
 
-diff = 0
+summ = 0
 
 n = len(arr1)
 i = 0
 while i < n:
-    diff += abs(arr1[i] - arr2[i])
+    summ=summ+(arr1[i]*arr2.count(arr1[i]))
     i += 1
 
-print("Difference is", diff)
+print("Count Sum is", summ)
